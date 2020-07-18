@@ -1,0 +1,49 @@
+<mat-card>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="row">
+        <div class="col-sm-6">
+            <mat-form-field class="full-width-input">
+                <input matInput placeholder="Field Name 1" formControlName="first">
+            </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+            <mat-form-field class="full-width-input">
+                <input matInput placeholder="Field Name 2">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <mat-form-field class="full-width-input">
+                <input matInput placeholder="Field Name 2">
+            </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+            <mat-form-field class="full-width-input">
+                <input matInput placeholder="Field Name 4">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <mat-form-field class="full-width-input">
+                <input matInput placeholder="Field Name 5">
+            </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+            <mat-form-field class="full-width-input">
+                <input matInput placeholder="Field Name 6">
+            </mat-form-field>
+        </div>
+    </div>
+    <button mat-raised-button color="primary">Send</button>
+
+    </form>
+
+    <div class="response">
+        <span>Response</span>
+        <div class="result" id="my-scroll">
+            
+        </div>
+    </div>
+</mat-card>

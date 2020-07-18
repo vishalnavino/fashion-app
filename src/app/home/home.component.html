@@ -1,0 +1,36 @@
+<mat-sidenav-container class="example-container" autosize>
+	<mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()"
+		(mouseleave)="mouseleave()">
+		<mat-nav-list>
+			<mat-list-item class="parent" [routerLinkActive]="['active']">
+				<a  [routerLink]="['/feature-one']"><span class="full-width" *ngIf="isShowing">Feature 1</span></a>
+				<mat-icon mat-list-icon>event_note</mat-icon>
+			</mat-list-item>
+			<mat-list-item class="parent" [routerLinkActive]="['active']">
+				<a  [routerLink]="['/feature-two']"><span class="full-width" *ngIf="isShowing">Feature 2</span></a>
+				<mat-icon mat-list-icon>event_note</mat-icon>
+			</mat-list-item>
+			<mat-list-item class="parent" [routerLinkActive]="['active']">
+				<a  [routerLink]="['/feature-three']"><span class="full-width" *ngIf="isShowing">Feature 3</span></a>
+				<mat-icon mat-list-icon>event_note</mat-icon>
+			</mat-list-item>
+			<mat-list-item class="parent" [routerLinkActive]="['active']">
+				<a  [routerLink]="['/feature-four']"><span class="full-width" *ngIf="isShowing">Feature 4</span></a>
+				<mat-icon mat-list-icon>event_note</mat-icon>
+			</mat-list-item>
+			<mat-list-item class="parent" [routerLinkActive]="['active']">
+				<a [routerLink]="['/settings']"><span class="full-width" *ngIf="isShowing">Settings</span></a>
+				<mat-icon mat-list-icon>lock</mat-icon>
+			</mat-list-item>
+
+		</mat-nav-list>
+		<mat-nav-list>
+		</mat-nav-list>
+	</mat-sidenav>
+
+	<div class="example-sidenav-content ">
+	
+<router-outlet></router-outlet>
+	</div>
+
+</mat-sidenav-container>
